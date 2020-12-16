@@ -20,6 +20,7 @@ int eval(char* in);
 int main(){
     scanf_s("%s",inbuf,128);
     tree(inbuf, outbuf);
+    char* ptr = outbuf;
     while(*ptr){
         if(*ptr == 'p'){
             printf("%d ", *((int*)(++ptr)));
