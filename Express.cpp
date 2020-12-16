@@ -19,8 +19,6 @@ int eval(char* in);
 
 int main(){
     scanf_s("%s",inbuf,128);
-    char* entry = outbuf;
-    char* ptr = outbuf;
     tree(inbuf, outbuf);
     while(*ptr){
         if(*ptr == 'p'){
